@@ -1,9 +1,8 @@
-
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  cleanUrls: true,
+  cleanUrls: false,
   title: "RAGERES DOCS",
   description: "Official Documentation for RAGERES Scripts",
   themeConfig: {
@@ -11,21 +10,17 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Resources',
+        text: "Resources",
         items: [
           {
-            text: 'Party Farm',
+            text: "Party Farm",
             collapsed: true,
-            items: [
-              { text: 'Player Guide', link: '/docs/party-farm' }
-            ]
-          }
-        ]
-      }
+            items: [{ text: "Player Guide", link: "/docs/party-farm" }],
+          },
+        ],
+      },
     ],
 
-    socialLinks: [
-      { icon: 'discord', link: 'https://discord.gg/rageres' }
-    ]
-  }
-})
+    socialLinks: [{ icon: "discord", link: "https://discord.gg/rageres" }],
+  },
+});
